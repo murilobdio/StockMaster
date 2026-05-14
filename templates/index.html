@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Controle de Ativos</title>
+</head>
+<body>
+
+<h1>📦 Cadastro de Ativos</h1>
+
+<form id="formAtivo">
+    <input type="text" id="nome_ativo" placeholder="Nome do Ativo" required>
+    <input type="text" id="tipo_categoria" placeholder="Categoria">
+    <input type="date" id="data_aquisicao">
+    <input type="text" id="status_governanca" placeholder="Status">
+    <button type="submit">Salvar</button>
+</form>
+
+<hr>
+
+<h2>Lista de Ativos</h2>
+<ul id="lista"></ul>
+
+<hr>
+
+<button id="btnSuporte">Abrir Suporte</button>
+
+<div id="suporteBox" style="display:none;">
+    <h2>🎫 Abrir Ticket</h2>
+
+    <form id="formTicket">
+        <select id="id_ativo"></select>
+
+        <select id="nivel_criticidade">
+            <option value="N1">N1</option>
+            <option value="N2">N2</option>
+            <option value="N3">N3</option>
+        </select>
+
+        <input type="text" id="descricao_erro" placeholder="Descrição do erro">
+        <button type="submit">Enviar Ticket</button>
+    </form>
+</div>
+
+<hr>
+
+<h2>📋 Tickets</h2>
+<ul id="listaTickets"></ul>
+
+<script src="/static/script.js"></script>
+
+</body>
+
+<p style="font-size:0.9em; color:gray; margin-top:10px;">
+    ℹ️ Para encerrar o aplicativo, feche o console após terminar de usar.
+</p>
+
+</html>
