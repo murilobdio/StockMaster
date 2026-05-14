@@ -1,57 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-    <title>Controle de Ativos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StockMaster</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 
-<h1>📦 Cadastro de Ativos</h1>
+    <div class="overlay">
 
-<form id="formAtivo">
-    <input type="text" id="nome_ativo" placeholder="Nome do Ativo" required>
-    <input type="text" id="tipo_categoria" placeholder="Categoria">
-    <input type="date" id="data_aquisicao">
-    <input type="text" id="status_governanca" placeholder="Status">
-    <button type="submit">Salvar</button>
-</form>
+        <!-- HEADER -->
+        <header>
+            <h1>
+                <i class="fa-solid fa-server"></i>
+                StockMaster
+            </h1>
 
-<hr>
+            <p>
+                Gerenciamento corporativo de ativos e suporte técnico
+            </p>
+        </header>
 
-<h2>Lista de Ativos</h2>
-<ul id="lista"></ul>
+        <!-- GRID SUPERIOR -->
+        <div class="top-grid">
 
-<hr>
+            <!-- CARD CADASTRO -->
+            <section class="card">
 
-<button id="btnSuporte">Abrir Suporte</button>
+                <h2>
+                    <i class="fa-solid fa-plus"></i>
+                    Cadastro de Ativos
+                </h2>
 
-<div id="suporteBox" style="display:none;">
-    <h2>🎫 Abrir Ticket</h2>
+                <form id="formAtivo">
 
-    <form id="formTicket">
-        <select id="id_ativo"></select>
+                    <input
+                        type="text"
+                        id="nome_ativo"
+                        placeholder="Nome do Ativo"
+                        required>
 
-        <select id="nivel_criticidade">
-            <option value="N1">N1</option>
-            <option value="N2">N2</option>
-            <option value="N3">N3</option>
-        </select>
+                    <input
+                        type="text"
+                        id="tipo_categoria"
+                        placeholder="Categoria">
 
-        <input type="text" id="descricao_erro" placeholder="Descrição do erro">
-        <button type="submit">Enviar Ticket</button>
-    </form>
-</div>
+                    <input
+                        type="date"
+                        id="data_aquisicao">
 
-<hr>
+                    <input
+                        type="text"
+                        id="status_governanca"
+                        placeholder="Status">
 
-<h2>📋 Tickets</h2>
-<ul id="listaTickets"></ul>
+                    <button type="submit">
+                        <i class="fa-solid fa-floppy-disk"></i>
+                        Salvar
+                    </button>
 
-<script src="/static/script.js"></script>
+                </form>
+
+            </section>
+
+            <!-- CARD SUPORTE -->
+            <section class="card">
+
+                <button id="btnSuporte" class="btn-suporte">
+
+                    <i class="fa-solid fa-headset"></i>
+                    Abrir Suporte
+
+                </button>
+
+                <div id="suporteBox"
+                    style="display:none; margin-top:20px;">
+
+                    <h2>
+                        <i class="fa-solid fa-ticket"></i>
+                        Abrir Ticket
+                    </h2>
+
+                    <form id="formTicket">
+
+                        <select id="id_ativo"></select>
+
+                        <select id="nivel_criticidade">
+
+                            <option value="N1">
+                                N1 - Baixa
+                            </option>
+
+                            <option value="N2">
+                                N2 - Média
+                            </option>
+
+                            <option value="N3">
+                                N3 - Alta
+                            </option>
+
+                        </select>
+
+                        <input
+                            type="text"
+                            id="descricao_erro"
+                            placeholder="Descrição do erro">
+
+                        <button type="submit">
+
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Enviar Ticket
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+            <!-- CARD TICKETS -->
+            <section class="card">
+
+                <h2>
+                    <i class="fa-solid fa-list-check"></i>
+                    Tickets
+                </h2>
+
+                <ul id="listaTickets" class="lista"></ul>
+
+            </section>
+
+        </div>
+
+        <!-- CARD ATIVOS -->
+        <section class="card ativos-card">
+
+            <h2>
+                <i class="fa-solid fa-database"></i>
+                Ativos
+            </h2>
+
+            <ul id="lista" class="lista"></ul>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            Para encerrar o aplicativo, feche o console após terminar de usar.
+        </footer>
+
+    </div>
+
+    <script src="/static/script.js"></script>
 
 </body>
-
-<p style="font-size:0.9em; color:gray; margin-top:10px;">
-    ℹ️ Para encerrar o aplicativo, feche o console após terminar de usar.
-</p>
 
 </html>
