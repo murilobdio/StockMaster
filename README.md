@@ -80,9 +80,9 @@ project/
 
 ## 1. Clonar o repositório
 
-git clone (https://github.com/Projeto-Integrador-StockMaster/StockMaster/edit/main/README.md)
+git clone https://github.com/Projeto-Integrador-StockMaster/StockMaster/edit/main/README.md
 
-Entrar na pasta:
+Entrar na pasta em que o projeto foi clonado:
 
 cd NOME_DO_REPOSITORIO
 
