@@ -80,7 +80,7 @@ project/
 
 ## 1. Clonar o repositório
 
-git clone [https://github.com/murilobdio/StockMaster.git](https://github.com/Projeto-Integrador-StockMaster/StockMaster/edit/main/README.md)
+git clone (https://github.com/Projeto-Integrador-StockMaster/StockMaster/edit/main/README.md)
 
 Entrar na pasta:
 
