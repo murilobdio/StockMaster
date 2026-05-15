@@ -63,9 +63,7 @@ project/
 │
 ├── static/
 │   ├── style.css
-│   ├── script.js
-│   └── img/
-│       └── bg.jpg
+│   └── script.js
 │
 ├── app.py
 ├── main.py
