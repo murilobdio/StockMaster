@@ -112,4 +112,4 @@ http://127.0.0.1:5000
 
 - O banco SQLite (`database.db`) é criado automaticamente.
 - O sistema será aberto automaticamente no navegador.
-- Para encerrar: CTRL + C
+- Para encerrar: utilizar o atalho 'CTRL + C' no terminal aberto quando o aplicativo foi iniciado.
